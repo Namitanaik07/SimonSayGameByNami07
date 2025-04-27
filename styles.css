@@ -1,0 +1,179 @@
+body {
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  animation: gradientBG 15s ease infinite;
+  font-family: 'Pixelify Sans', 'Press Start 2P', cursive, sans-serif;
+  min-height: 100vh;
+  color: white;
+}
+h1{
+
+font-size:65px;
+}
+  
+  .btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .yellow {
+    background-color: #ffcc00; /* Bright Gold */
+  }
+  
+  .red {
+    background-color: #ff4c4c; /* Vivid Red */
+  }
+  
+  .purple {
+    background-color: #a66cff; /* Neon Purple */
+  }
+  
+  .green {
+    background-color: #00e676; /* Neon Green */
+  }
+  
+  .flash {
+    background-color: white;
+  }
+  
+  .userflash {
+    background-color: green;
+  }
+
+ 
+   /* */ 
+  /* Animate background */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+    font-size: 2rem;
+    box-shadow: 0 8px #999, 0 0 20px rgba(255, 255, 255, 0.5); /* 3D shadow and glow */
+    transition: all 0.2s ease;
+    transform: perspective(600px) rotateX(10deg);
+  }
+  
+  .btn:active {
+    transform: perspective(600px) rotateX(25deg) scale(0.95);
+    box-shadow: 0 4px #666;
+  }
+  
+  #start-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin: 1rem;
+    box-shadow: 0 8px #666, 0 0 20px rgba(76, 175, 80, 0.8); /* green glow */
+    transition: all 0.2s ease;
+    transform: perspective(600px) rotateX(5deg);
+    font-family: 'Pixelify Sans', 'Press Start 2P', cursive, sans-serif;
+  }
+  
+  #start-btn:hover {
+    background-color: #45a049;
+    transform: perspective(600px) rotateX(0deg) scale(1.05);
+  }
+  
+  #start-btn:active {
+    transform: perspective(600px) rotateX(15deg) scale(0.95);
+    box-shadow: 0 4px #444;
+  }
+  
+  @keyframes float {
+  0% {
+    transform: perspective(600px) rotateX(10deg) translateY(0px);
+  }
+  50% {
+    transform: perspective(600px) rotateX(10deg) translateY(-10px);
+  }
+  100% {
+    transform: perspective(600px) rotateX(10deg) translateY(0px);
+  }
+}
+
+/* Apply this floating effect */
+.btn {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+#rules-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  z-index: 1000;
+  width: 300px;
+  display: none; /* Initially hidden */
+  font-family: 'Pixelify Sans', 'Press Start 2P', cursive, sans-serif;
+  box-shadow: 0 0 20px #fff;
+}
+
+.rules-content h3 {
+  margin-bottom: 1rem;
+}
+
+.rules-content ul {
+  text-align: left;
+  list-style-type: square;
+}
+
+#rules-btn, #close-rules-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Pixelify Sans', 'Press Start 2P', cursive, sans-serif;
+}
+
+#rules-btn:hover, #close-rules-btn:hover {
+  background-color: #45a049;
+}
+  
+#rules-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin: 1rem;
+  box-shadow: 0 8px #666, 0 0 20px rgba(76, 175, 80, 0.8); /* green glow */
+  transition: all 0.2s ease;
+  transform: perspective(600px) rotateX(5deg);
+  font-family: 'Pixelify Sans', 'Press Start 2P', cursive, sans-serif;
+}
+
+#rules-btn:hover {
+  background-color: #45a049;
+  transform: perspective(600px) rotateX(0deg) scale(1.05);
+}
