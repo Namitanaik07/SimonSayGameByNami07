@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1>&lt;/Simon Says Game&gt;</h1>
+    <h2>Press Start to play</h2>
+
+    <button id="start-btn">Start Game</button>
+    <button id="rules-btn">View Rules</button>
+
+<div id="rules-popup" class="hidden">
+  <div class="rules-content">
+    <h3>Game Rules</h3>
+    <ul>
+      <li>Press "Start" to begin the game.</li>
+      <li>Watch the sequence carefully.</li>
+      <li>Repeat the sequence by clicking the colored buttons in the correct order.</li>
+      <li>Each level adds one new color to the sequence.</li>
+      <li>If you make a mistake, the game is over!</li>
+      <li>Try to beat your highest score!</li>
+    </ul>
+    <button id="close-rules-btn">Close</button>
+  </div>
+</div>
+
+
+    <div class="btn-container">
+      <div class="line-one">
+        <div class="btn red" type="button" id="red">1</div>
+        <div class="btn yellow" type="button" id="yellow">2</div>
+      </div>
+      <div class="line-two">
+        <div class="btn green" type="button" id="green">3</div>
+        <div class="btn purple" type="button" id="purple">4</div>
+      </div>
+    </div>
+    <h3 id="high-score-display">High Score: 0</h3> 
+    <script src="script.js"></script>
+  </body>
+</html>
