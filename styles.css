@@ -25,19 +25,19 @@ font-size:65px;
   }
   
   .yellow {
-    background-color: #ffcc00; /* Bright Gold */
+    background-color: #ffcc00; 
   }
   
   .red {
-    background-color: #ff4c4c; /* Vivid Red */
+    background-color: #ff4c4c; 
   }
   
   .purple {
-    background-color: #a66cff; /* Neon Purple */
+    background-color: #a66cff; 
   }
   
   .green {
-    background-color: #00e676; /* Neon Green */
+    background-color: #00e676;
   }
   
   .flash {
@@ -50,7 +50,7 @@ font-size:65px;
 
  
    /* */ 
-  /* Animate background */
+  
   @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -64,7 +64,7 @@ font-size:65px;
     border: 10px solid black;
     margin: 2.5rem;
     font-size: 2rem;
-    box-shadow: 0 8px #999, 0 0 20px rgba(255, 255, 255, 0.5); /* 3D shadow and glow */
+    box-shadow: 0 8px #999, 0 0 20px rgba(255, 255, 255, 0.5);
     transition: all 0.2s ease;
     transform: perspective(600px) rotateX(10deg);
   }
@@ -83,7 +83,7 @@ font-size:65px;
     color: white;
     cursor: pointer;
     margin: 1rem;
-    box-shadow: 0 8px #666, 0 0 20px rgba(76, 175, 80, 0.8); /* green glow */
+    box-shadow: 0 8px #666, 0 0 20px rgba(76, 175, 80, 0.8); 
     transition: all 0.2s ease;
     transform: perspective(600px) rotateX(5deg);
     font-family: 'Pixelify Sans', 'Press Start 2P', cursive, sans-serif;
@@ -111,7 +111,7 @@ font-size:65px;
   }
 }
 
-/* Apply this floating effect */
+
 .btn {
   animation: float 3s ease-in-out infinite;
 }
@@ -128,7 +128,7 @@ font-size:65px;
   color: white;
   z-index: 1000;
   width: 300px;
-  display: none; /* Initially hidden */
+  display: none;
   font-family: 'Pixelify Sans', 'Press Start 2P', cursive, sans-serif;
   box-shadow: 0 0 20px #fff;
 }
@@ -167,7 +167,7 @@ font-size:65px;
   color: white;
   cursor: pointer;
   margin: 1rem;
-  box-shadow: 0 8px #666, 0 0 20px rgba(76, 175, 80, 0.8); /* green glow */
+  box-shadow: 0 8px #666, 0 0 20px rgba(76, 175, 80, 0.8); 
   transition: all 0.2s ease;
   transform: perspective(600px) rotateX(5deg);
   font-family: 'Pixelify Sans', 'Press Start 2P', cursive, sans-serif;
